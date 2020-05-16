@@ -20,6 +20,11 @@ public class Pojazd {
         this.rodzajPojazdu = rodzajPojazdu;
     }
 
+    public Pojazd(int spalanie, int stanZbiornikaPaliwa) {
+        this.spalanie = spalanie;
+        this.stanZbiornikaPaliwa = stanZbiornikaPaliwa;
+    }
+
     public String getKodVIM() {
         return kodVIM;
     }
