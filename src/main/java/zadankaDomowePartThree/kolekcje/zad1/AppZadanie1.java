@@ -1,9 +1,6 @@
 package zadankaDomowePartThree.kolekcje.zad1;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class AppZadanie1 {
     public static void main(String[] args) {
@@ -31,8 +28,12 @@ public class AppZadanie1 {
 //        WypisanieListy.wypisanieListy(listaTymczasowa);
         zbiorLiczbCalkowitych.addAll(listaTymczasowa);
         WypisanieZbioru.wypisanieZbioru(zbiorLiczbCalkowitych);
-
-
+        System.out.println(listaTymczasowa.size());
+        System.out.println(zbiorLiczbCalkowitych.size());
+        Collections.sort(listaTymczasowa);
+        WypisanieListy.wypisanieListy(listaTymczasowa);
+        System.out.println(listaTymczasowa.get(0));
+        System.out.println(listaTymczasowa.get(listaTymczasowa.size() - 1));
 
     }
 
